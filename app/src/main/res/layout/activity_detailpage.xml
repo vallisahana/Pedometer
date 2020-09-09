@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:fillViewport="true"
+    tools:context=".DetailpageActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="379dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Help us know you better "
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+
+                android:id="@+id/image1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/users"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/editTextname"
+                app:layout_constraintHorizontal_bias="0.471"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.066">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/editTextname"
+                android:layout_width="260dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btnclient"
+                android:ems="10"
+                android:fontFamily="@font/aclonica"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.728"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.054" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="784dp"
+                android:background="@drawable/cake"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/editTextage"
+                app:layout_constraintHorizontal_bias="0.433"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/editTextage"
+                android:layout_width="260dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/btnclient"
+                android:ems="10"
+                android:fontFamily="@font/aclonica"
+                android:hint="Age"
+                android:inputType="number"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextname"
+                app:layout_constraintVertical_bias="0.057" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="696dp"
+                android:background="@drawable/phone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/editTextphone"
+                app:layout_constraintHorizontal_bias="0.471"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/editTextphone"
+                android:layout_width="260dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/btnclient"
+                android:ems="10"
+                android:fontFamily="@font/aclonica"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.728"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextage" />
+
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="612dp"
+                android:background="@drawable/gender"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/radiogroup"
+                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </ImageView>
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="260dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.728"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextphone">
+
+
+                <RadioButton
+                    android:id="@+id/radiomale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/radiofemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Female"
+                    android:textSize="15sp" />
+
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_marginBottom="524dp"
+                android:background="@drawable/weight"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/spinnerweight"
+                app:layout_constraintHorizontal_bias="0.514"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/spinnerweight"
+                android:layout_width="260dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/btnclient"
+                android:ems="10"
+                android:fontFamily="@font/aclonica"
+                android:hint="Weight"
+                android:inputType="numberDecimal"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.728"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radiogroup" />
+
+
+            <ImageView
+                android:id="@+id/image7"
+                android:layout_width="37dp"
+                android:layout_height="43dp"
+                android:layout_marginBottom="428dp"
+                android:background="@drawable/height"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/editTextheight"
+                app:layout_constraintHorizontal_bias="0.41"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/editTextheight"
+                android:layout_width="260dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/btnclient"
+                android:ems="10"
+                android:fontFamily="@font/aclonica"
+                android:hint="Height"
+                android:inputType="numberDecimal"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.728"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerweight" />
+
+
+            <ImageView
+                android:id="@+id/image8"
+                android:layout_width="37dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="340dp"
+                android:background="@drawable/daily"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </ImageView>
+
+            <Spinner
+                android:id="@+id/spinnerdaily"
+                android:layout_width="260dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/btnclient"
+                android:ems="10"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.728"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextheight" />
+
+
+            <ImageView
+                android:id="@+id/image9"
+                android:layout_width="37dp"
+                android:layout_height="43dp"
+                android:layout_marginBottom="252dp"
+                android:background="@drawable/heart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/spinnermedical"
+                app:layout_constraintHorizontal_bias="0.383"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </ImageView>
+
+            <Spinner
+                android:id="@+id/spinnermedical"
+                android:layout_width="260dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/btnclient"
+                android:ems="10"
+                android:spinnerMode="dialog"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.728"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerdaily" />
+
+
+            <ImageView
+                android:id="@+id/image10"
+                android:layout_width="37dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="48dp"
+
+                android:background="@drawable/range"
+                app:layout_constraintEnd_toStartOf="@+id/spinnermedical"
+                app:layout_constraintHorizontal_bias="0.452"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image9">
+
+            </ImageView>
+
+            <Spinner
+                android:id="@+id/spinnerrange"
+                android:layout_width="260dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/btnclient"
+                android:ems="10"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.728"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnermedical" />
+
+
+            <Button
+                android:id="@+id/buttonext"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="100dp"
+                android:background="#009688"
+                android:text="Next"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerrange">
+
+            </Button>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

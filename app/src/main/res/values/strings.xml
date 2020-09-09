@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Pedometer App</string>
+
+    <string name="sharing_text" formatted="false">
+        Hi guys,Check out this new Health Calculator with tremendous features,It is amazing! https://play.google.com/store/apps/details?id=
+    </string>
+
+    <string name="very_severely_underweight" formatted="false">
+         Underweight
+    </string>
+
+    <string name="severely_underweight" formatted="false">
+       Severely Underweight
+    </string>
+
+    <string name="underweight" formatted="false">
+        Underweight
+    </string>
+
+    <string name="overweight" formatted="false">
+        Overweight
+    </string>
+
+    <string name="normal" formatted="false">
+       Normal
+    </string>
+
+    <string name="obese_class_i" formatted="false">
+       Obsese class 1
+    </string>
+
+    <string name="obese_class_ii" formatted="false">
+       Obsese class 2
+    </string>
+
+    <string name="obese_class_iii" formatted="false">
+        Obsese class 3
+    </string>
+
+    <string name="sensor_label">Sensor</string>
+    <string name="sensor_calibrated_name">Gyroscope</string>
+    <string name="action_config">Settings</string>
+    <string name="action_reset">Reset</string>
+    <string name="label_x_axis">X-Axis:</string>
+    <string name="label_y_axis">Y-Axis:</string>
+    <string name="label_z_axis">Z-Axis:</string>
+    <string name="value_default">0.0</string>
+    <string name="value_default_mean_filter">0.5</string>
+    <string name="value_default_complimentary_filter">0.5</string>
+    <string name="action_options">Options</string>
+    <string name="action_help">Help</string>
+    <string name="action_start">Start Log</string>
+    <string name="action_stop">Stop Log</string>
+
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactusActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="Contact us" />
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:text="contact us."
+            android:textAlignment="center"
+            android:textColor="#880E4F"
+            android:textSize="30dp" />
+
+        <TextView
+            android:text="Have questions? Contact our Pets Kradle support team or visit our FAQ below."
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="phone"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="(410)366-0290"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="email"
+            android:textColor="#000"
+            android:textSize="20dp" />
+        <TextView
+            android:text="support@Pedometerapp.com"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/linkButton"
+            android:text="www.Pedometer.com"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:background="#0000"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

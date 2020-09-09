@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomepageActivity">
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/aclonica"
+        android:text="WELCOME"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="316dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Based on your goal of becoming fitter"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="325dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Your Daily Calorie Budget is "
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="315dp"
+        android:layout_height="61dp"
+        android:fontFamily="@font/aclonica"
+        android:text="1000 Cal"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text8"
+        android:layout_width="315dp"
+        android:layout_height="61dp"
+        android:fontFamily="@font/aclonica"
+        android:text="10,000 steps"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="342dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Tracking increases chances of meeting your goals by 3x"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="301dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Start now!"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8">
+
+    </TextView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:background="#fff"
+        android:elevation="0dp"
+        android:src="@drawable/ic_add_black_24dp"
+        android:tint="@android:color/white"
+        app:elevation="0dp"
+        app:fabCustomSize="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943"
+        tools:ignore="RelativeOverlap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

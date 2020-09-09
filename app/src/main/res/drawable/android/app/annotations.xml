@@ -1,0 +1,5 @@
+<root>
+    <item name='android.app.AlarmManager'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

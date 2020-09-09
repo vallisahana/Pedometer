@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/caback"
+    tools:context=".FoodcalActivity">
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="401dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btnclient"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="Calories Calculator"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/aclonica"
+            android:text="  Enter Food Name to calculate Calories:"
+            android:textAlignment="center"
+            android:textColor="#00897B"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:fontFamily="@font/aclonica"
+            android:hint="Enter Food"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/calculateBtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="calculateClk"
+            android:text="Calculate Calories" />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:textColor="#43A047"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@android:color/black"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:textColor="#E53935"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:textColor="#FFB300"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

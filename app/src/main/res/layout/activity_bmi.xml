@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BMIActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="PEDOMETER APP"
+        app:titleTextColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="384dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/aclonica"
+        android:text="BMI Calculator"
+        android:textAlignment="center"
+        android:textColor="#D81B60"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="305dp"
+        android:layout_height="58dp"
+        android:background="@drawable/btnclients"
+        android:hint="Enter Your height in cm"
+        android:textColor="#D81B60"
+        android:textAlignment="center"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="305dp"
+        android:layout_height="57dp"
+        android:background="@drawable/btnclients"
+        android:hint="Enter Your weight"
+        android:textAlignment="center"
+        android:textColor="#D81B60"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/clickme"
+        android:layout_width="226dp"
+        android:layout_height="63dp"
+        android:text="Click Me"
+        android:onClick="calculateClickHandler"
+        android:textColor="#fff"
+        android:background="#D81B60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.713">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="377dp"
+        android:layout_height="61dp"
+        android:fontFamily="@font/aclonica"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874">
+
+    </TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

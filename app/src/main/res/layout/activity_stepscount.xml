@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/step"
+    tools:context=".StepscountActivity">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/count"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="387dp"
+        android:layout_height="61dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Steps"
+        android:textAlignment="center"
+        android:textColor="#D81B60"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="387dp"
+        android:layout_height="61dp"
+        android:text="0.00"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.431">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/cal"
+        android:layout_width="140dp"
+        android:layout_height="69dp"
+        android:background="@drawable/btnclient"
+        android:gravity="center"
+        android:text="0.00 Cal"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.618">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/km"
+        android:layout_width="140dp"
+        android:layout_height="69dp"
+        android:background="@drawable/btnclient"
+        android:gravity="center"
+        android:text="0.00 km"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

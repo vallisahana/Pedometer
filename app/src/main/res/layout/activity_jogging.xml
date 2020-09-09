@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/circl"
+    tools:context=".JoggingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Jogging"
+        app:titleTextColor="#fff" />
+
+
+    <EditText
+        android:id="@+id/editminute"
+        android:layout_width="225dp"
+        android:layout_height="51dp"
+        android:hint="Enter the Minutes"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="74dp"
+        android:layout_height="61dp"
+        android:background="@drawable/circle"
+        android:text="set"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="311dp"
+        android:layout_height="63dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="00:00"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btnreset"
+        android:layout_width="167dp"
+        android:layout_height="55dp"
+        android:background="@drawable/use"
+        android:fontFamily="@font/aclonica"
+        android:text="Reset"
+        android:textColor="#fff"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.867"
+        tools:visibility="visible">
+
+    </Button>
+
+    <Button
+
+        android:id="@+id/buttonstart"
+        android:layout_width="163dp"
+        android:layout_height="56dp"
+        android:background="@drawable/use"
+        android:fontFamily="@font/aclonica"
+        android:text="Start"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739">
+
+    </Button>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jogging Remainder"
+        android:fontFamily="@font/aclonica"
+        android:textColor="#D81B60"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
